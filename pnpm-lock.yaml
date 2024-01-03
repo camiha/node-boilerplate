@@ -1,12 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@biomejs/biome': ^1.0.0
   '@types/node': 18.15.3
   c8: 7.13.0
   husky: 8.0.3
   lint-staged: 13.2.0
   nodemon: ^2.0.21
-  rome: ^11.0.0
   ts-node: 10.9.1
   typescript: 5.0.2
   unbuild: ^1.1.2
@@ -14,12 +14,12 @@ specifiers:
   vitest: 0.29.3
 
 devDependencies:
+  '@biomejs/biome': 1.4.1
   '@types/node': 18.15.3
   c8: 7.13.0
   husky: 8.0.3
   lint-staged: 13.2.0
   nodemon: 2.0.21
-  rome: 11.0.0
   ts-node: 10.9.1_sxidjv3cojnrggmso45tj7hldi
   typescript: 5.0.2
   unbuild: 1.1.2
@@ -239,6 +239,74 @@ packages:
   /@bcoe/v8-coverage/0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
+
+  /@biomejs/biome/1.4.1:
+    resolution: {integrity: sha512-JccVAwPbhi37pdxbAGmaOBjUTKEwEjWAhl7rKkVVuXHo4MLASXJ5HR8BTgrImi4/7rTBsGz1tgVD1Kwv1CHGRg==}
+    engines: {node: '>=14.*'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.4.1
+      '@biomejs/cli-darwin-x64': 1.4.1
+      '@biomejs/cli-linux-arm64': 1.4.1
+      '@biomejs/cli-linux-x64': 1.4.1
+      '@biomejs/cli-win32-arm64': 1.4.1
+      '@biomejs/cli-win32-x64': 1.4.1
+    dev: true
+
+  /@biomejs/cli-darwin-arm64/1.4.1:
+    resolution: {integrity: sha512-PZWy2Idndqux38p6AXSDQM2ldRAWi32bvb7bMbTN0ALzpWYMYnxd71ornatumSSJYoNhKmxzDLq+jct7nZJ79w==}
+    engines: {node: '>=14.*'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-darwin-x64/1.4.1:
+    resolution: {integrity: sha512-soj3BWhnsM1M2JlzR09cibUzG1owJqetwj/Oo7yg0foijo9lNH9XWXZfJBYDKgW/6Fomn+CC2EcUS+hisQzt9g==}
+    engines: {node: '>=14.*'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-arm64/1.4.1:
+    resolution: {integrity: sha512-YIZqfJUg4F+fPsBTXxgD7EU2E5OAYbmYSl/snf4PevwfQCWE/omOFZv+NnIQmjYj9I7ParDgcJvanoA3/kO0JQ==}
+    engines: {node: '>=14.*'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-linux-x64/1.4.1:
+    resolution: {integrity: sha512-9YOZw3qBd/KUj63A6Hn2zZgzGb2nbESM0qNmeMXgmqinVKM//uc4OgY5TuKITuGjMSvcVxxd4dX1IzYjV9qvNQ==}
+    engines: {node: '>=14.*'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-win32-arm64/1.4.1:
+    resolution: {integrity: sha512-nWQbvkNKxYn/kCQ0yVF8kCaS3VzaGvtFSmItXiMknU4521LDjJ7tNWH12Gol+pIslrCbd4E1LhJa0a3ThRsBVg==}
+    engines: {node: '>=14.*'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@biomejs/cli-win32-x64/1.4.1:
+    resolution: {integrity: sha512-88fR2CQxQ4YLs2BUDuywWYQpUKgU3A3sTezANFc/4LGKQFFLV2yX+F7QAdZVkMHfA+RD9Xg178HomM/6mnTNPA==}
+    engines: {node: '>=14.*'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /@cspotcode/source-map-support/0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -606,54 +674,6 @@ packages:
       picomatch: 2.3.1
       rollup: 3.19.1
     dev: true
-
-  /@rometools/cli-darwin-arm64/11.0.0:
-    resolution: {integrity: sha512-F3vkdY+s3FLIEnAjSbyHTuIPB88cLpccimW4ecid5I7S6GzGG3iUJI4xT00JhH73K4P/qW20/9r+kH1T9Du8Xg==}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@rometools/cli-darwin-x64/11.0.0:
-    resolution: {integrity: sha512-X6jhtS6Iml4GOzgNtnLwIp/KXXhSdqeVyfv69m/AHnIzx3gQAjPZ7BPnJLvTCbhe4SKHL+uTZYFSCJpkUUKE6w==}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@rometools/cli-linux-arm64/11.0.0:
-    resolution: {integrity: sha512-dktTJJlTpmycBZ2TwhJBcAO8ztK8DdevdyZnFFxdYRvtmJgTjIsC2UFayf/SbKew8B8q1IhI0it+D6ihAeIpeg==}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@rometools/cli-linux-x64/11.0.0:
-    resolution: {integrity: sha512-WVcnXPNdWGUWo0p4NU8YzuthjYR7q+b4vRcjdxtP1DlpphZmSsoC/RSE85nEqRAz8hChcKUansVzOPM8BSsuGA==}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@rometools/cli-win32-arm64/11.0.0:
-    resolution: {integrity: sha512-tPj6RThQzS7Q45jqQll7NlTYvNcsg/BEP3LYiiazqSh9FAFnMkrV6ewUcMPKWyAfiyLs7jlz4rRvdNRUSygzfQ==}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@rometools/cli-win32-x64/11.0.0:
-    resolution: {integrity: sha512-bmBai8WHxYjsGk1+je7ZTfCUCWq30WJI3pQM8pzTA674lfGTZ9ymJoZwTaIMSO4rL5V9mlO6uLunsBKso9VqOg==}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
@@ -1930,20 +1950,6 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /rome/11.0.0:
-    resolution: {integrity: sha512-rRo6JOwpMLc3OkeTDRXkrmrDqnxDvZ75GS4f0jLDBNmRgDXWbu0F8eVnJoRn+VbK2AE7vWvhVOMBjnWowcopkQ==}
-    engines: {node: '>=14.*'}
-    hasBin: true
-    requiresBuild: true
-    optionalDependencies:
-      '@rometools/cli-darwin-arm64': 11.0.0
-      '@rometools/cli-darwin-x64': 11.0.0
-      '@rometools/cli-linux-arm64': 11.0.0
-      '@rometools/cli-linux-x64': 11.0.0
-      '@rometools/cli-win32-arm64': 11.0.0
-      '@rometools/cli-win32-x64': 11.0.0
     dev: true
 
   /run-parallel/1.2.0:
